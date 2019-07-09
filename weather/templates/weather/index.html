@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather Extreme</title>
+	
+	<!-- <link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" /> -->
+	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+	<!-- replace this html -->
+	<div id = "extremeContain" class="container">
+	
+		<div class = "templateIntroWords">
+      <img src="/static/weather/assets/open.png"  width=25 height=25>
+    <span id="textSpan">Welcome To Weather Extreme!</span>
+       <img src="/static/weather/assets/open.png"  width=25 height=25>
+    </div>
+    
+    <div id="weatherRecPane" class="container">
+      	<div class=”row”>
+
+         <button id="thunderImage"></button>
+         <button id="hurricaneImage"></button>
+          <button id="tsunamiImage"></button>
+          <button id="blizzardImage"></button>
+        </div>
+    </div>
+		
+    
+    <span class=”row”>
+      <input id="textSearch" type="text" name="Search">
+      <button id="searchImage" onclick="location.href='/weather/forecast/alert/';"></button>
+    </span>
+    
+    <div class=”row”>
+     <button id="startPlanChase" onclick="location.href='/weather/comparison/';"> Start Planning Chase!</button>
+    </div>
+    
+     <div class=”row”>
+        <button id="currentChase" onclick="location.href='/weather/forecast/';">Your Current Chase</button>
+    </div>
+    
+     <div class=”row”>
+        <button id="usPlanChase" onclick="location.href='/weather/comparison/alert/';">Location Compare</button>
+    </div>
+    
+
+	</div>
+  
+	
+	
+	<!-- /replace this html -->
+</body>
+</html>
+
+
+
+
+

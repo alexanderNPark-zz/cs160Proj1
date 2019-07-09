@@ -1,0 +1,108 @@
+li {
+    color: green;
+}
+
+#extremeContain{
+  margin-left:0px;
+}
+
+.templateIntroWords{
+  display: flex;
+  align-items: center;
+  img {
+    margin: 10px;
+   
+    padding: 10px;
+    transition: margin 300ms;
+  }
+  
+  &:hover {
+    img {
+      margin-left: 15px;
+    }
+  }
+}
+
+#textSpan{
+  font-size:25px;
+  color:green;
+  margin-left:0px;
+}
+
+#weatherRecPane{
+  margin-left:0px;
+  height: 160px;  
+  width: 325px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+}
+#thunderImage{
+  background-image:url("/static/weather/assets/iconThunder.png");
+  background-size: 100px 130px;
+  height: 134px;  
+  width: 104px;
+ 
+}
+#hurricaneImage{
+  background-image:url("/static/weather/assets/iconHurricane.png");
+  background-size: 100px 130px;
+  height: 134px;  
+  width: 104px;
+}
+#tsunamiImage{
+  background-image:url("/static/weather/assets/iconTsunami.png");
+  background-size: 100px 130px;
+  height: 134px;  
+  width: 104px;
+}
+
+#blizzardImage{
+  background-image:url("/static/weather/assets/iconBlizzard.png");
+  background-size: 100px 130px;
+  height: 134px;  
+  width: 104px;
+}
+
+#textSearch{
+  width:auto;
+  height:30px;
+}
+
+#searchImage{
+  background-image:url("/static/weather/assets/iconSearch.png");
+  background-size: 28px 28px;
+  vertical-align: bottom;
+  height: 30px;  
+  width: 30px;
+}
+
+#startPlanChase{
+  padding: 32px 10px;
+  width:325px;
+  font-size:30px;
+  color:black;
+  font-weight:750;
+  white-space:nowrap;
+  background-image:url("/static/weather/assets/download.png");
+}
+
+#currentChase{
+  padding: 32px 16px;
+  width:325px;
+  font-size:30px;
+  font-weight: 500;
+  white-space: nowrap;
+  background-image:url("/static/weather/assets/chase.png");
+}
+
+#usPlanChase{
+  padding: 25px 16px;
+  width:300px;
+  font-size:25px;
+  font-weight: 500;
+  white-space: nowrap;
+  background-image:url("/static/weather/assets/maps2.jpg");
+}
+
